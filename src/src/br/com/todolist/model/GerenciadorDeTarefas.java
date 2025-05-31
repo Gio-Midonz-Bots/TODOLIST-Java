@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class GerenciadorDeTarefas extends Tarefas{
 
 
-    public GerenciadorDeTarefas(int id, String titulo, String descricao, boolean status) {
-        super(id, titulo, descricao, status);
+    public GerenciadorDeTarefas() {
+
     }
 
     void adicionarTarefas(String titulo, String descricao){
