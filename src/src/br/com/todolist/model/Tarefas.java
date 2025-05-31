@@ -6,17 +6,13 @@ public class Tarefas {
     private String descricao;
     private boolean status;
 
-    public Tarefas() {
-
-    }
-
-    public void setTitulo(String titulo) {
+    public Tarefas(int id,String titulo,String descricao,boolean status) {
+        this.id = id;
         this.titulo = titulo;
+        this.descricao = descricao;
+        this.status = status;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
 
     public int getId() {
         return id;

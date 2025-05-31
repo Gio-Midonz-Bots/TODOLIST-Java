@@ -2,7 +2,10 @@ package br.com.todolist.model;
 
 import java.util.ArrayList;
 
-public class GerenciadorDeTarefas extends Tarefas{
+public class GerenciadorDeTarefas{
+
+
+    private ArrayList<Tarefas> lista = new ArrayList<>();
 
 
     public GerenciadorDeTarefas() {
@@ -17,10 +20,6 @@ public class GerenciadorDeTarefas extends Tarefas{
         return false;
     }
 
-    @Override
-    void marcarComoConcluida() {
-        super.marcarComoConcluida();
-    }
     void listarTarefas(){
 
     }
