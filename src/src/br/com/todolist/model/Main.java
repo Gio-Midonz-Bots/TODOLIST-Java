@@ -64,7 +64,17 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.println("vocÊ saiu do programa!");
+                    System.out.println("------------MARCAR TAREFA COMO CONCLUÍDA------------");
+                    System.out.println("Informe o ID da tarefa: ");
+                    int idConcluir = input.nextInt();
+                    input.nextLine();
+
+                    boolean marcada = gerenciador.marcarTarefasComoConcluidas(idConcluir);
+                    if (marcada) {
+                        System.out.println("Tarefa marcada como concluída com sucesso!");
+                    } else {
+                        System.out.println("Tarefa não encontrada. Verifique o ID.");
+                    }
                     break;
 
                 case 0:

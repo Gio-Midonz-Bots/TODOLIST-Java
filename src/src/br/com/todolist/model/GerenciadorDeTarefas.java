@@ -31,6 +31,17 @@ public class GerenciadorDeTarefas{
         return false;
     }
 
+    boolean marcarTarefasComoConcluidas(int ID){
+        for(int i=0;i<lista.size();i++){
+            Tarefas tarefas = lista.get(i);
+                if(tarefas.getId()==ID){
+                tarefas.setStatus(true);
+                return true;}
+        }
+        return false;
+    }
+
+
     void listarTarefas(){
         if (lista.isEmpty()) {
             System.out.println("Nenhuma tarefa cadastrada.");

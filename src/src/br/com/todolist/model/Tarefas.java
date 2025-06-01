@@ -18,6 +18,10 @@ public class Tarefas {
         return id;
     }
 
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
     public String getTitulo() {
         return titulo;
     }
