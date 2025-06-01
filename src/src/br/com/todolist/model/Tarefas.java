@@ -36,10 +36,10 @@ public class Tarefas {
 
     @Override
     public String toString() {
-        return "Tarefas do momentos:\n" +
+        return "\nTarefas do momentos:\n" +
                 "ID da tareda: "+ getId() +
                 "\nTitulo da tareda: "+ getTitulo()+
                 "\nDescrição da tareda: " + getDescricao()+
-                "\nStatus da tareda: " + isStatus();
+                "\nStatus da tareda: " +(status ? "Concluída" : "Pendente");
     }
 }
